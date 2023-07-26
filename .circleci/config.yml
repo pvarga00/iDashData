@@ -1,0 +1,12 @@
+version: 2
+jobs:
+  build:
+    
+    working_directory: ~/LiftOff/LiftOff_Brain
+
+    docker:
+      - image: halplatform/hal-build-environments:vs2017
+
+    steps:
+
+      - checkout
